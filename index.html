@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개인정보처리방침 / Privacy Policy - NetAegis</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --bg-page: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+            --badge-bg: #eff6ff;
+            --badge-text: #1d4ed8;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.75;
+            color: var(--text-main);
+            background-color: var(--bg-page);
+            padding: 32px 16px;
+        }
+
+        .container {
+            max-width: 840px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
+            border: 1px solid var(--border);
+        }
+
+        .header-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-bottom: 24px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .brand-title {
+            font-size: 24px;
+            font-weight: 800;
+            color: #0f172a;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .lang-switch {
+            display: inline-flex;
+            background: #f1f5f9;
+            padding: 4px;
+            border-radius: 8px;
+        }
+
+        .lang-btn {
+            border: none;
+            background: transparent;
+            padding: 8px 16px;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-muted);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .lang-btn.active {
+            background: var(--card-bg);
+            color: var(--primary);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .highlight-box {
+            background-color: var(--badge-bg);
+            border-left: 4px solid var(--primary);
+            padding: 16px 20px;
+            margin: 20px 0 28px 0;
+            border-radius: 8px;
+            color: #1e3a8a;
+            font-weight: 500;
+        }
+
+        h1 {
+            font-size: 26px;
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 8px;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1e3a8a;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        p {
+            font-size: 15px;
+            color: #334155;
+            margin-bottom: 12px;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            font-size: 15px;
+            color: #334155;
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: #0f172a;
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .hidden {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header-bar">
+        <div class="brand-title">
+            🛡️ NetAegis
+        </div>
+        <div class="lang-switch">
+            <button class="lang-btn active" id="btn-ko" onclick="setLanguage('ko')">한국어 (KO)</button>
+            <button class="lang-btn" id="btn-en" onclick="setLanguage('en')">English (EN)</button>
+        </div>
+    </div>
+
+    <!-- 한국어 내용 (KOREAN) -->
+    <div id="content-ko">
+        <h1>개인정보처리방침 (Privacy Policy)</h1>
+        <p style="color: #64748b; font-size: 14px;"><strong>최종 수정일:</strong> 2026년 9월 24일</p>
+
+        <div class="highlight-box">
+            NetAegis(넷이지스)는 이용자의 개인정보 및 프라이버시 보호를 최우선 가치로 생각합니다.<br>
+            <strong>본 애플리케이션에서 수행되는 모든 네트워크 진단 및 트래픽 분석은 외부 원격 서버로 전송되지 않으며, 오직 이용자의 기기 내부(100% On-Device Local)에서만 안전하게 실행됩니다.</strong>
+        </div>
+
+        <h2>1. 수집하는 개인정보 항목 및 처리 목적</h2>
+        <p>NetAegis는 회원가입이나 계정 생성을 요구하지 않으며, 자체적인 원격 데이터베이스로 개인 식별 정보를 수집·저장하지 않습니다.</p>
+        <ul>
+            <li><strong>로컬 네트워크 및 Wi-Fi 진단 정보:</strong> Wi-Fi 신호 세기, 채널 간섭 그래프, 로컬 LAN 서브넷 연결 기기 목록(IP/MAC/제조사) 분석을 위해 기기 메모리 내에서만 일시적으로 처리되며 외부로 전송되지 않습니다.</li>
+            <li><strong>앱 잠금 비밀번호:</strong> 이용자가 설정한 앱 비밀번호는 단방향 SHA-256 해시 알고리즘으로 암호화되어 기기 로컬에만 안전하게 저장됩니다.</li>
+            <li><strong>비밀번호 복구용 이메일:</strong> 비상시 임시 비밀번호 수신을 위해 이용자가 직접 입력한 이메일 주소는 기기 내에 암호화 보관되며, 마케팅이나 외부 수집 목적으로 활용되지 않습니다.</li>
+        </ul>
+
+        <h2>2. Android VpnService (가상 사설망 서비스) 사용 고지</h2>
+        <p>NetAegis는 Google Play의 <strong>VpnService 정책</strong>을 엄격히 준수합니다.</p>
+        <ul>
+            <li><strong>사용 목적:</strong> 앱 내 '실시간 트래픽 감지', '공유기 침입자 실시간 감시', '백그라운드 데이터 유출(스파이웨어) 탐지' 및 '도메인/IP 방화벽(차단 관리)' 기능을 수행하기 위해 Android 시스템의 로컬 VpnService API를 활용합니다.</li>
+            <li><strong>100% 로컬 루프백(Local Loopback) 처리:</strong> 본 앱의 VPN은 외부 제3자 VPN 서버나 프록시로 트래픽을 우회 전송하지 않습니다. 모든 패킷 필터링(DNS Sinkhole) 및 분석은 기기 자체의 로컬 메모리 안에서만 처리됩니다.</li>
+            <li><strong>데이터 무수집·무전송 원칙:</strong> VPN 통로를 거쳐 지나가는 사용자의 웹 탐색 기록, 개인 메시지, 금융 데이터 등 일체의 개인정보를 수집, 모니터링, 외부 전송 또는 판매하지 않습니다.</li>
+        </ul>
+
+        <h2>3. 기기 접근 권한 및 사용 목적</h2>
+        <ul>
+            <li><strong>위치 정보 (ACCESS_FINE_LOCATION / ACCESS_COARSE_LOCATION):</strong> Android OS 보안 정책상 주변 Wi-Fi AP 스캔 및 신호 세기를 측정하기 위해 필수적인 시스템 요구 권한입니다. 실제 사용자의 GPS 위치를 추적하거나 서버로 보내지 않습니다.</li>
+            <li><strong>근처 기기 권한 (NEARBY_WIFI_DEVICES):</strong> Android 13 이상 기기에서 로컬 Wi-Fi 진단 및 보안 검사를 실행하기 위해 사용됩니다.</li>
+            <li><strong>알림 권한 (POST_NOTIFICATIONS):</strong> Wi-Fi 침입자 감지 시 또는 백그라운드 데이터 유출이 의심될 때 사용자에게 즉시 보안 경고 알림을 제공하기 위해 사용됩니다.</li>
+            <li><strong>접근성 / 기기 관리자 권한 (선택 사항):</strong> 이용자가 직접 설정한 앱 무단 삭제 방지(보안 잠금) 기능을 지원하기 위해서만 사용되며, 다른 목적으로 데이터를 수집하지 않습니다.</li>
+        </ul>
+
+        <h2>4. 제3자 서비스 (Third-Party Services)</h2>
+        <p>본 앱은 원활한 무료 서비스 제공 및 인앱 결제 처리를 위해 Google의 검증된 SDK를 사용합니다. 각 제공업체의 개인정보 보호정책에 따라 비식별 기기 정보가 처리될 수 있습니다.</p>
+        <ul>
+            <li><strong>Google AdMob (Google Mobile Ads SDK):</strong> 배너 및 전면 광고 제공을 위해 Google의 광고 식별자 및 비식별 진단 정보가 활용될 수 있습니다. (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a>)</li>
+            <li><strong>Google Play In-App Billing:</strong> NetAegis Pro 평생 이용권 및 멤버십 구매 시 결제 처리는 Google Play 시스템을 통해 안전하게 처리되며, 개발자는 카드 번호 등 금융 정보를 일체 수집하거나 알 수 없습니다.</li>
+        </ul>
+
+        <h2>5. 개인정보의 보유 및 파기</h2>
+        <p>모든 진단 로그, 차단 기록, 사용자 설정 데이터는 이용자의 기기 내부 샌드박스 저장소에만 보관됩니다. 사용자가 앱을 삭제하거나 [설정]에서 앱 데이터를 초기화할 경우 즉시 영구 파기됩니다.</p>
+
+        <h2>6. 개발자 연락처 및 개인정보 보호 책임</h2>
+        <p>개인정보 보호 관련 문의, 의견 또는 불만 사항이 있으신 경우 아래 연락처로 문의해 주시기 바랍니다.</p>
+        <ul>
+            <li><strong>애플리케이션:</strong> NetAegis (넷이지스) / NetAegis Pro</li>
+            <li><strong>개발자/책임자 이메일:</strong> <a href="mailto:ytawoong@gmail.com">ytawoong@gmail.com</a></li>
+        </ul>
+
+        <div class="footer">
+            &copy; 2026 NetAegis. All rights reserved.
+        </div>
+    </div>
+
+    <!-- 영문 내용 (ENGLISH) -->
+    <div id="content-en" class="hidden">
+        <h1>Privacy Policy</h1>
+        <p style="color: #64748b; font-size: 14px;"><strong>Last Updated:</strong> September 24, 2026</p>
+
+        <div class="highlight-box">
+            NetAegis values your privacy above all else.<br>
+            <strong>All network diagnostics and traffic analyses conducted by this application are processed entirely on-device (100% Local). No personal traffic is ever transmitted to external remote servers.</strong>
+        </div>
+
+        <h2>1. Information We Collect and Purpose</h2>
+        <p>NetAegis does not require user accounts or registration, and operates with zero remote database storage for personal identifiers.</p>
+        <ul>
+            <li><strong>Local Network & Wi-Fi Diagnostics:</strong> Wi-Fi signal metrics, channel interference graphs, and connected local LAN device lists (IP, MAC, vendor) are temporarily analyzed strictly within device memory and are never transmitted externally.</li>
+            <li><strong>App Lock Passcode:</strong> Any password configured by the user is irreversibly hashed using one-way SHA-256 encryption and stored solely in local secure storage.</li>
+            <li><strong>Emergency Recovery Email:</strong> An optional recovery email provided by the user is stored locally in encrypted form strictly for emergency passcode reset and is never used for marketing or external logging.</li>
+        </ul>
+
+        <h2>2. Android VpnService Policy Disclosure</h2>
+        <p>NetAegis strictly complies with the Google Play <strong>VpnService Policy</strong>.</p>
+        <ul>
+            <li><strong>Purpose of Use:</strong> NetAegis utilizes the Android VpnService API exclusively for local firewall filtering, rogue device detection, and real-time background spyware/data-leak detection.</li>
+            <li><strong>100% Local Loopback (No Remote VPN):</strong> The VPN operates entirely via a local loopback interface. It does not route or redirect user traffic to third-party VPN servers or proxy servers. All DNS sinkholing and packet inspection are executed strictly within the device's local memory.</li>
+            <li><strong>No Data Collection or Monetization:</strong> We do not log, capture, collect, monitor, transmit, or monetize any user browsing activity, messages, financial data, or network payload traversing the local VPN tunnel.</li>
+        </ul>
+
+        <h2>3. Device Permissions & Usage</h2>
+        <ul>
+            <li><strong>Location (ACCESS_FINE_LOCATION / ACCESS_COARSE_LOCATION):</strong> Required by Android OS policy to scan nearby Wi-Fi access points and measure signal strengths. We never track GPS coordinates or send location data to external servers.</li>
+            <li><strong>Nearby Wi-Fi Devices (NEARBY_WIFI_DEVICES):</strong> Used on Android 13+ devices to perform Wi-Fi diagnostics and security audits.</li>
+            <li><strong>Notifications (POST_NOTIFICATIONS):</strong> Used to deliver immediate security alert notifications when rogue Wi-Fi devices or abnormal data leaks are detected.</li>
+            <li><strong>Accessibility / Device Admin (Optional):</strong> Strictly used to prevent unauthorized uninstallation of the app when the security lock feature is explicitly enabled by the user.</li>
+        </ul>
+
+        <h2>4. Third-Party Services & SDKs</h2>
+        <p>To provide free features and secure in-app purchases, NetAegis integrates industry-standard Google SDKs. These services may collect non-personally identifiable diagnostic information under their respective privacy policies:</p>
+        <ul>
+            <li><strong>Google AdMob (Mobile Ads SDK):</strong> Used to serve banner and interstitial ads. Google may use mobile advertising IDs to deliver relevant ads. (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>)</li>
+            <li><strong>Google Play In-App Billing:</strong> Used to securely process NetAegis Pro lifetime purchases and subscriptions. Payment details are handled entirely by Google Play; NetAegis never accesses or stores credit card numbers or billing addresses.</li>
+        </ul>
+
+        <h2>5. Data Retention & Destruction</h2>
+        <p>All diagnostic logs, firewall rules, and app settings are stored solely in the application's isolated local sandbox storage. If you uninstall the app or clear its data in system settings, all stored data is permanently deleted immediately.</p>
+
+        <h2>6. Contact Us</h2>
+        <p>If you have any questions, feedback, or inquiries regarding this Privacy Policy, please contact us at:</p>
+        <ul>
+            <li><strong>Application:</strong> NetAegis / NetAegis Pro</li>
+            <li><strong>Developer Email:</strong> <a href="mailto:ytawoong@gmail.com">ytawoong@gmail.com</a></li>
+        </ul>
+
+        <div class="footer">
+            &copy; 2026 NetAegis. All rights reserved.
+        </div>
+    </div>
+</div>
+
+<script>
+    function setLanguage(lang) {
+        const koContent = document.getElementById('content-ko');
+        const enContent = document.getElementById('content-en');
+        const btnKo = document.getElementById('btn-ko');
+        const btnEn = document.getElementById('btn-en');
+
+        if (lang === 'en') {
+            koContent.classList.add('hidden');
+            enContent.classList.remove('hidden');
+            btnEn.classList.add('active');
+            btnKo.classList.remove('active');
+            document.documentElement.lang = 'en';
+        } else {
+            enContent.classList.add('hidden');
+            koContent.classList.remove('hidden');
+            btnKo.classList.add('active');
+            btnEn.classList.remove('active');
+            document.documentElement.lang = 'ko';
+        }
+    }
+
+    if (navigator.language && !navigator.language.startsWith('ko')) {
+        setLanguage('en');
+    }
+</script>
+</body>
+</html>
